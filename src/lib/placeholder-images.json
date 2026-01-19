@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Palm trees over a turquoise ocean and white sand beach.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890",
-      "imageHint": "tropical beach"
+      "description": "A beautiful luxury resort pool area, perfect for a family vacation.",
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbb5ed",
+      "imageHint": "luxury resort"
     },
     {
       "id": "service-beach",
