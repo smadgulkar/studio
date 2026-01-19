@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A beautiful luxury resort pool area, perfect for a family vacation.",
-      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbb5ed",
-      "imageHint": "luxury resort"
+      "description": "A beautiful tropical beach with white sand and clear blue water, embodying luxury travel.",
+      "imageUrl": "https://images.unsplash.com/photo-1590523277543-a94d2e422f34",
+      "imageHint": "luxury beach"
     },
     {
       "id": "service-beach",
