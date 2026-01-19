@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A beautiful coastal view with mountains",
+      "imageUrl": "https://images.unsplash.com/photo-1768058242264-7043aae4cb32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2FzdGFsJTIwbW91bnRhaW5zfGVufDB8fHx8MTc2ODgzODA0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coastal mountains"
+    },
+    {
+      "id": "service-beach",
+      "description": "A pristine beach with clear turquoise water",
+      "imageUrl": "https://images.unsplash.com/photo-1571497569639-7bd0fcd36c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWFjaCUyMHJlc29ydHxlbnwwfHx8fDE3Njg4MzgwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach resort"
+    },
+    {
+      "id": "service-adventure",
+      "description": "A person hiking in a vast mountain range",
+      "imageUrl": "https://images.unsplash.com/photo-1547203928-d8c7cc83e56f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMGhpa2luZ3xlbnwwfHx8fDE3Njg4MzgwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain hiking"
+    },
+    {
+      "id": "service-culture",
+      "description": "An ancient temple in a cultural city",
+      "imageUrl": "https://images.unsplash.com/photo-1650432602350-d1d86aafd55b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmNpZW50JTIwdGVtcGxlfGVufDB8fHx8MTc2ODgzODA0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient temple"
+    },
+    {
+      "id": "service-luxury",
+      "description": "A luxurious hotel room with a view",
+      "imageUrl": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsdXh1cnklMjBob3RlbHxlbnwwfHx8fDE3Njg3Mjk4NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury hotel"
+    }
+  ]
 }
