@@ -5,10 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-16 md:py-24 bg-card">
+    <section id="services" className="py-20 md:py-28 bg-secondary/30">
       <div className="container">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Our Travel Styles</h2>
+        <div className="text-center space-y-4 mb-16">
+          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Our Travel Styles</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From serene beach holidays to adventurous treks, we tailor every trip to your unique desires. Discover your perfect journey with us.
           </p>
@@ -17,7 +17,7 @@ export function ServicesSection() {
           {services.map((service) => {
             const image = PlaceHolderImages.find((img) => img.id === service.imageId);
             return (
-              <Card key={service.id} className="overflow-hidden group hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card key={service.id} className="overflow-hidden group hover:shadow-2xl transition-shadow duration-300 flex flex-col bg-card shadow-lg">
                 {image && (
                   <div className="overflow-hidden">
                     <Image

@@ -14,7 +14,7 @@ export function StarRating({ rating, className }: StarRatingProps) {
           key={i}
           className={cn(
             'h-5 w-5',
-            rating > i ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'
+            rating > i ? 'text-accent fill-accent' : 'text-muted-foreground/50'
           )}
         />
       ))}

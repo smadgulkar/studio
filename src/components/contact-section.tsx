@@ -49,16 +49,16 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-card">
+    <section id="contact" className="py-20 md:py-28 bg-secondary/30">
       <div className="container">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold">Get In Touch</h2>
+        <div className="text-center space-y-4 mb-16">
+          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to start planning your next adventure? Contact us today for a personalized consultation. We are located in Madison, NJ.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
+          <div className="bg-card p-8 rounded-lg shadow-lg">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -104,13 +104,13 @@ export function ContactSection() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg transition-shadow">
                   Send Message
                 </Button>
               </form>
             </Form>
           </div>
-          <div className="h-80 md:h-full w-full rounded-lg overflow-hidden">
+          <div className="h-96 md:h-full w-full rounded-lg overflow-hidden shadow-lg">
             <Map />
           </div>
         </div>
