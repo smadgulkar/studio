@@ -18,18 +18,17 @@ export function HeroSection() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container max-w-4xl space-y-6">
-          <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl" style={{textShadow: '0 2px 4px rgba(0,0,0,0.3)'}}>
-            Curated Travel, 40 Years of Excellence.
+          <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl" style={{textShadow: '0 3px 6px rgba(0,0,0,0.4)'}}>
+            Exquisite Journeys for the Modern Family.
           </h1>
           <p className="text-lg text-neutral-200 md:text-xl max-w-3xl mx-auto">
-            Unitravco in Madison, NJ crafts bespoke journeys that create lifelong memories.
-            Let our experience guide your next adventure.
+            Discover unparalleled luxury and family-friendly adventures. With 40 years of expertise, Unitravco designs unforgettable travel experiences.
           </p>
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl">
-            <Link href="#contact">Plan Your Trip</Link>
+            <Link href="#contact">Begin Your Journey</Link>
           </Button>
         </div>
       </div>

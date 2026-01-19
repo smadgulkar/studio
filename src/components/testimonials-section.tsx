@@ -14,7 +14,7 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="py-20 md:py-28">
+    <section id="testimonials" className="py-24 md:py-32">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Stories From Our Travelers</h2>

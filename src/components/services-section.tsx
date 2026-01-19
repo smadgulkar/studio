@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20 md:py-28 bg-secondary/30">
+    <section id="services" className="py-24 md:py-32 bg-secondary/30">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
           <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Our Travel Styles</h2>
