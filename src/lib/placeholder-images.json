@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A beautiful coastal view with mountains",
-      "imageUrl": "https://images.unsplash.com/photo-1768058242264-7043aae4cb32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2FzdGFsJTIwbW91bnRhaW5zfGVufDB8fHx8MTc2ODgzODA0NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "coastal mountains"
+      "description": "Serene turquoise waters and white sand beach in Turks and Caicos",
+      "imageUrl": "https://images.unsplash.com/photo-1573843981267-be199c634be8?q=80&w=1920&auto=format&fit=crop",
+      "imageHint": "turks caicos"
     },
     {
       "id": "service-beach",
