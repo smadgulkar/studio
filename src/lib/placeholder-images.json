@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A serene white sand beach in Turks and Caicos",
-      "imageUrl": "https://storage.googleapis.com/aif-quick-app-project-solutions/prod/2024-07-25T19-35-11.458Z/AifSolution/image.jpg",
+      "description": "A serene white sand beach with turquoise water",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "serene beach"
     },
     {
