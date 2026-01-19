@@ -2,7 +2,7 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A pristine tropical beach with white sand, clear turquoise water, and lush green palm trees.",
+      "description": "Green palm trees on a white sand beach under a clear blue sky.",
       "imageUrl": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a",
       "imageHint": "tropical beach"
     },
@@ -21,7 +21,7 @@
     {
       "id": "service-culture",
       "description": "An ancient temple in a cultural city",
-      "imageUrl": "https://images.unsplash.com/photo-1650432602350-d1d86aafd55b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmNpZW50JTIwdGVtcGxlfGVufDB8fHx8MTc2ODgzODA0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650432602350-d1d86aafd55b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhbmNpZW50JTIwdGVtcGxlfGVufDB8fHx8fDE3Njg4MzgwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ancient temple"
     },
     {
