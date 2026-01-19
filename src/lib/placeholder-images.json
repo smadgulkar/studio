@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A serene beach with turquoise water and white sand.",
-      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890",
-      "imageHint": "serene beach"
+      "description": "A beautiful tropical beach with white sand and turquoise water.",
+      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206",
+      "imageHint": "tropical beach"
     },
     {
       "id": "service-beach",
