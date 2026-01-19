@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A luxury family-friendly resort in Turks and Caicos",
-      "imageUrl": "https://images.unsplash.com/photo-1572979691168-33c8c5938883?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "luxury resort"
+      "description": "A serene beach with turquoise water and white sand.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "serene beach"
     },
     {
       "id": "service-beach",
