@@ -3,7 +3,7 @@
     {
       "id": "hero",
       "description": "A beautiful tropical beach with white sand and clear blue water, embodying luxury travel.",
-      "imageUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=1920&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723a9ce6890?q=80&w=1920&auto=format&fit=crop",
       "imageHint": "vibrant beach"
     },
     {
@@ -29,6 +29,12 @@
       "description": "A luxurious hotel room with a view",
       "imageUrl": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsdXh1cnklMjBob3RlbHxlbnwwfHx8fDE3Njg3Mjk4NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury hotel"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map with a pin indicating a location in Madison, NJ",
+      "imageUrl": "https://images.unsplash.com/photo-1594398935255-38b8c195a432?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "map pin location"
     }
   ]
 }
