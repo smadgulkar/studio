@@ -7,27 +7,28 @@ export function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
 
   return (
-    <section className="relative h-[calc(100vh-4rem)] w-full">
+    <section className="relative h-[calc(100vh-4rem)] w-full overflow-hidden">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
           alt={heroImage.description}
           fill
-          className="object-cover"
+          className="object-cover scale-105"
           priority
           data-ai-hint={heroImage.imageHint}
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_35%,rgba(0,0,0,0.35),transparent_70%)]" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container max-w-4xl space-y-6">
-          <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl" style={{textShadow: '0 3px 6px rgba(0,0,0,0.4)'}}>
+          <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl animate-fade-in-up stagger-1" style={{textShadow: '0 3px 6px rgba(0,0,0,0.4)'}}>
             Exquisite Journeys for the Modern Family.
           </h1>
-          <p className="text-lg text-neutral-200 md:text-xl max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-200 md:text-xl max-w-3xl mx-auto animate-fade-in-up stagger-2">
             Discover unparalleled luxury and family-friendly adventures. With 40 years of expertise, Unitravco designs unforgettable travel experiences.
           </p>
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl btn-pulse animate-fade-in-up stagger-3">
             <Link href="#contact">Begin Your Journey</Link>
           </Button>
         </div>

@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A beautiful tropical beach with white sand and clear blue water, embodying luxury travel.",
-      "imageUrl": "https://images.unsplash.com/photo-1690571100303-cb86f92b9b01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2aWJyYW50JTIwYmVhY2h8ZW58MHx8fHwxNzY4OTE5MjcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "vibrant beach"
+      "description": "A bright tropical beach with white sand, turquoise water, and palm trees.",
+      "imageUrl": "https://www.celebritycruises.com/blog/content/uploads/2021/06/white-sand-beaches-seven-mile-beach-grand-cayman-1024x683.jpg",
+      "imageHint": "tropical beach"
     },
     {
       "id": "service-beach",

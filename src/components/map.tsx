@@ -1,31 +1,51 @@
 "use client";
 
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useMemo } from "react";
+import { MapContainer, Marker, Popup, TileLayer, ZoomControl } from "react-leaflet";
+import L from "leaflet";
+
+const position: [number, number] = [40.7595, -74.4172];
 
 export function Map() {
-  const mapImage = PlaceHolderImages.find((img) => img.id === 'contact-map');
+  const markerIcon = useMemo(
+    () =>
+      L.divIcon({
+        className: "custom-marker",
+        html: '<span class="marker-pin"></span><span class="marker-core"></span>',
+        iconSize: [28, 28],
+        iconAnchor: [14, 28],
+        popupAnchor: [0, -24],
+      }),
+    []
+  );
 
   return (
-    <div className="w-full h-full relative">
-      {mapImage ? (
-        <Image
-          src={mapImage.imageUrl}
-          alt={mapImage.description}
-          fill
-          className="object-cover"
-          data-ai-hint={mapImage.imageHint}
+    <div className="relative h-full w-full">
+      <MapContainer
+        center={position}
+        zoom={13}
+        zoomControl={false}
+        scrollWheelZoom={false}
+        className="h-full w-full"
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-      ) : (
-        <div className="w-full h-full bg-muted flex items-center justify-center">
-          <p className="text-muted-foreground">Map image not available</p>
-        </div>
-      )}
-       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
-       <div className="absolute bottom-4 left-4 text-white">
-          <p className="font-bold font-headline text-lg" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Unitravco</p>
-          <p className="text-sm" style={{textShadow: '0 1px 3px rgba(0,0,0,0.5)'}}>Madison, NJ</p>
-       </div>
+        <Marker position={position} icon={markerIcon}>
+          <Popup>
+            <div className="space-y-1">
+              <p className="font-semibold">Unitravco</p>
+              <p className="text-sm text-muted-foreground">Madison, NJ</p>
+            </div>
+          </Popup>
+        </Marker>
+        <ZoomControl position="bottomright" />
+      </MapContainer>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+      <div className="pointer-events-none absolute left-4 top-4 rounded-full bg-background/90 px-4 py-2 text-sm font-semibold text-foreground shadow-lg backdrop-blur">
+        Madison, NJ
+      </div>
     </div>
   );
 }

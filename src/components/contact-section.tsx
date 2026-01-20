@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -15,7 +16,14 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Map } from "./map";
+const Map = dynamic(() => import("./map").then((mod) => mod.Map), {
+  ssr: false,
+  loading: () => (
+    <div className="flex h-full w-full items-center justify-center bg-muted/40">
+      <p className="text-sm text-muted-foreground">Loading map...</p>
+    </div>
+  ),
+});
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -49,16 +57,18 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-secondary/30">
-      <div className="container">
+    <section id="contact" className="relative py-24 md:py-32 bg-gradient-to-b from-background via-secondary/40 to-background overflow-hidden">
+      <div className="pointer-events-none absolute -top-24 left-12 h-64 w-64 rounded-full bg-accent/10 blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute bottom-0 right-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" />
+      <div className="container relative z-10">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">Get In Touch</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight animate-fade-in-up">Get In Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to start planning your next adventure? Contact us today for a personalized consultation. We are located in Madison, NJ.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
-          <div className="bg-card p-8 rounded-lg shadow-lg">
+          <div className="bg-card/90 p-8 rounded-2xl shadow-soft border border-border/60 backdrop-blur animate-fade-in-up">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
@@ -110,7 +120,7 @@ export function ContactSection() {
               </form>
             </Form>
           </div>
-          <div className="h-96 md:h-full w-full rounded-lg overflow-hidden shadow-lg">
+          <div className="h-96 md:h-full w-full rounded-2xl overflow-hidden shadow-soft ring-1 ring-border/60 animate-fade-in-up">
             <Map />
           </div>
         </div>
