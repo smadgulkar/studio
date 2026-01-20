@@ -1,34 +1,23 @@
 "use client";
 
-import { APIProvider, Map as GoogleMap, Marker } from '@vis.gl/react-google-maps';
+import Image from 'next/image';
 
 export function Map() {
-  const position = { lat: 40.7593, lng: -74.4155 };
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
-  if (!apiKey) {
-    return (
-      <div className="w-full h-full bg-muted flex items-center justify-center rounded-lg">
-        <p className="text-muted-foreground text-center p-4">
-          Google Maps API Key is missing. <br />
-          Please add NEXT_PUBLIC_GOOGLE_MAPS_API_KEY to your environment variables.
-        </p>
-      </div>
-    );
-  }
-
+  // Using a static image for the map as a placeholder since an API key is not available for the prototype.
   return (
-    <APIProvider apiKey={apiKey}>
-      <GoogleMap
-        style={{ width: '100%', height: '100%', borderRadius: 'var(--radius)' }}
-        defaultCenter={position}
-        defaultZoom={15}
-        gestureHandling={'greedy'}
-        disableDefaultUI={true}
-        mapId="unitravco-map"
-      >
-        <Marker position={position} />
-      </GoogleMap>
-    </APIProvider>
+    <div className="w-full h-full relative">
+      <Image
+        src="https://images.unsplash.com/photo-1594398935255-38b8c195a432?q=80&w=1080&auto=format&fit=crop"
+        alt="A map with a pin indicating a location in Madison, NJ"
+        fill
+        className="object-cover"
+        data-ai-hint="map pin location"
+      />
+       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+       <div className="absolute bottom-4 left-4 text-white">
+          <p className="font-bold font-headline text-lg" style={{textShadow: '0 2px 4px rgba(0,0,0,0.5)'}}>Unitravco</p>
+          <p className="text-sm" style={{textShadow: '0 1px 3px rgba(0,0,0,0.5)'}}>Madison, NJ</p>
+       </div>
+    </div>
   );
 }
